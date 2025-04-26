@@ -1,6 +1,7 @@
 // Start a new Pipeline
 pipeline {
-    agent any  # Run on any Jenkins machine (no restriction)
+    // Run on any Jenkins machine (no restriction)
+    agent any 
 
     // Start defining steps (like a list of tasks to do)
     stages {
