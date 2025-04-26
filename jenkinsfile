@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Download your code from GitHub into Jenkins machine - Tell Jenkins where your code lives
-                git url: 'https://github.com/Payal412/Jenkins-CI-CD-Demo.git'
+                git branch: 'main', url: 'https://github.com/Payal412/Jenkins-CI-CD-Demo.git'
             }
         }
 
