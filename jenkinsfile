@@ -20,7 +20,7 @@ pipeline {
 
                 // Example for Java Maven project
                 // Run Maven command to build project (Java apps use Maven)
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
@@ -30,7 +30,7 @@ pipeline {
                 echo "Running tests..."
 
                 // Maven will find and run your Selenium or JUnit tests
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 echo "Deploying the project..."
                 // Simulate deployment
-                sh 'echo Deployment done!'
+                bat 'echo Deployment done!'
             }
         }
     }
